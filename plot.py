@@ -16,7 +16,7 @@ st.altair_chart(chart)
 
 st.header("2. Intercative charts")
 st.subheader("2.1 line chart")
-df = pd.read_csv("C:/Users/madhu/OneDrive/Desktop/streamlit/lang_data.csv")
+df = pd.read_csv("lang_data.csv")
 lang_list = df.columns.tolist()
 lang_choices = st.multiselect("select lans : ", lang_list)
 new_df = df[lang_choices]
@@ -28,7 +28,7 @@ st.area_chart(new_df)
 
 st.header("3. data visualisation with plotly")
 st.subheader("3.1 Displaying the dataset")
-df = pd.read_csv("C:/Users/madhu/OneDrive/Desktop/streamlit/tips.csv")
+df = pd.read_csv("tips.csv")
 st.table(df.head())
 
 st.subheader("3.2 pie chart")
